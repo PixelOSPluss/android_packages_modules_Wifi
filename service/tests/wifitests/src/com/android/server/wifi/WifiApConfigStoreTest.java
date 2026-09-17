@@ -173,6 +173,7 @@ public class WifiApConfigStoreTest extends WifiBaseTest {
         mResources.setString(R.string.wifi_localhotspot_configure_ssid_default,
                              TEST_DEFAULT_HOTSPOT_SSID);
         mResources.setBoolean(R.bool.config_wifiSoftapPassphraseAsciiEncodableCheck, true);
+        mResources.setBoolean(R.bool.config_wifi_tether_random_ssid_append, true);
         setupAllBandsSupported();
 
         when(mContext.getResourceCache()).thenReturn(mResources);
